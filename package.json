@@ -1,0 +1,36 @@
+{
+  "name": "michaelsu.dev",
+  "version": "1.0.0",
+  "description": "Michael's Portfolio website",
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next builder",
+    "prettier": "prettier -write",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaeldotdev/michaelsu.dev.git"
+  },
+  "keywords": [],
+  "author": "Michael Su",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/michaeldotdev/michaelsu.dev/issues"
+  },
+  "homepage": "https://github.com/michaeldotdev/michaelsu.dev#readme",
+  "dependencies": {
+    "@chakra-ui/react": "^1.7.2",
+    "@emotion/react": "^11.6.0",
+    "@emotion/styled": "^11.6.0",
+    "framer-motion": "^5.3.3",
+    "next": "^12.0.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-next": "^12.0.4",
+    "prettier": "^2.5.0"
+  }
+}
