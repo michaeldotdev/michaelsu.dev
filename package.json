@@ -4,7 +4,7 @@
   "description": "Michael's Portfolio website",
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
-    "build": "next builder",
+    "build": "next build",
     "prettier": "prettier -write",
     "lint": "next lint"
   },
