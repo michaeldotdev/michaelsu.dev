@@ -20,9 +20,11 @@ const NavbarTitle = () => {
         <NavTitle>
           <Text
             color={useColorModeValue("gray.800", "whiteAlpha.900")}
-            fontFamily="M PLUS Rounded 1c"
+            fontFamily="sans-serif"
             fontWeight="bold"
+            mb={2}
             ml={3}>
+            
             Michael Su
           </Text>
         </NavTitle>
