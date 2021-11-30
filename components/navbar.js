@@ -2,6 +2,7 @@ import { Box, Container, Flex, Heading, IconButton, Link, Menu, MenuButton, Menu
 import { HamburgerIcon } from "@chakra-ui/icons";
 import NavbarTitle from "./navbarTitle";
 import NextLink from "next/link";
+import LightThemeButton from "./light-button";
 
 const LinkItem = ({children, href, path }) => {
   const active = path === href;
@@ -20,7 +21,13 @@ const Navbar = props => {
   const { path } = props;
   
   return (
-    <Box as="nav" bg={useColorModeValue("#ffffff40", "#20202380")} position="fixed" style={{ backdropFilter: "blur(10px" }} w="100%" zIndex={1} {...props}>
+    <Box as="nav"
+      bg={useColorModeValue("#ffffff40", "#20202380")}
+      position="fixed" style={{ backdropFilter: "blur(10px)" }}
+      w="100%"
+      Index={1}
+      {...props}
+    >
       <Container align="center" display="flex" justify="space-between" maxW="container.md" p={2} wrap="wrap">
         <Flex align="center" mr={5}>
           <Heading as="h1" letterSpacing={"tighter"} size="lg">
@@ -39,7 +46,8 @@ const Navbar = props => {
         </Stack>
 
         <Box align="right" flex={1}>
-          <Box display={{ base: "inline-block", md: "none" }}>
+          <LightThemeButton />
+          <Box display={{ base: "inline-block", md: "none" }} ml={2}>
             <Menu>
               <MenuButton aria-label="Options" as={IconButton} icon={<HamburgerIcon />} variant="ouline" ></MenuButton>
               <MenuList>
